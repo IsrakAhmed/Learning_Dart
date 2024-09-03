@@ -10,74 +10,12 @@ import 'dart:io';
 
 main() {
   List<String> keywords = [
-    'abstract',
-    'as',
-    'assert',
-    'async',
-    'await',
-    'base',
-    'break',
-    'case',
-    'catch',
-    'class',
-    'const',
-    'continue',
-    'covariant',
-    'default',
-    'deferred',
-    'do',
-    'dynamic',
-    'else',
-    'enum',
-    'export',
-    'extends',
-    'extension',
-    'external',
-    'factory',
-    'false',
-    'final',
-    'finally',
-    'for',
-    'Function',
-    'get',
-    'hide',
-    'if',
-    'implements',
-    'import',
-    'in',
-    'interface',
-    'is',
-    'late',
-    'library',
-    'mixin',
-    'new',
-    'null',
-    'of',
-    'on',
-    'operator',
-    'part',
-    'required',
-    'rethrow',
-    'return',
-    'sealed',
-    'set',
-    'show',
-    'static',
-    'super',
-    'switch',
-    'sync',
-    'this',
-    'throw',
-    'true',
-    'try',
-    'type',
-    'typedef',
-    'var',
-    'void',
-    'when',
-    'with',
-    'while',
-    'yield'
+    'abstract','as','assert','async','await','base','break','case','catch','class','const',
+    'continue','covariant','default','deferred','do','dynamic','else','enum','export','extends',
+    'extension','external','factory','false','final','finally','for','Function','get','hide',
+    'if','implements','import','in','interface','is','late','library','mixin','new','null','of','on',
+    'operator','part','required','rethrow','return','sealed','set','show','static','super','switch',
+    'sync','this','throw','true','try','type','typedef','var','void','when','with','while','yield'
   ];
 
   stdout.write('Enter a word to check : ');
@@ -86,7 +24,9 @@ main() {
 
   if (input != null && keywords.indexOf(input) != -1) {
     print(input + " is a Dart keyword");
-  } else {
+  }
+  
+  else {
     input = input == null ? 'null' : input;
     print(input + " is not a Dart keyword");
   }
